@@ -1,2 +1,4 @@
 *.apd
 *hidden*
+*.pak
+.gitignore
