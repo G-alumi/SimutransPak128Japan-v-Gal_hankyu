@@ -5,7 +5,7 @@
 
 ライセンス - [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja)
 
-2023/11/21 2300系座席指定車両を追加
+2023/12/29 8000系列を追加
 
 各種アドオンの屋根上機器に[htrkdk様](https://sites.google.com/site/htrsimu)の京王7000系を使用させていただきました。
 この場を借りてお礼申し上げます。
