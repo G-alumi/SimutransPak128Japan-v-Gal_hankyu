@@ -3,4 +3,5 @@
 *.pak
 .gitignore
 *.zip
-kt_base18mAL.png
+kt*.png
+*.json
