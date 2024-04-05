@@ -49,6 +49,10 @@ vehicle           Gal_hankyu_Mc2800                   9       18513
 vehicle           Gal_hankyu_T2880                    8       17042
 vehicle           Gal_hankyu_M2830                    9       17441
 vehicle           Gal_hankyu_Tc2850                   8       16991
+vehicle           Gal_hankyu_Mc2800_3D                9       18905
+vehicle           Gal_hankyu_T2880_3D                 8       17259
+vehicle           Gal_hankyu_M2830_3D                 9       17661
+vehicle           Gal_hankyu_Tc2850_3D                8       17208
 vehicle           Gal_hankyu_Mc2800_AC                9       18905
 vehicle           Gal_hankyu_T2880_AC                 8       17259
 vehicle           Gal_hankyu_M2830_AC                 9       17661
