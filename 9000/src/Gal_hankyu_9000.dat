@@ -92,7 +92,7 @@ gear=154
 power=800
 length=11
 Constraint[Prev][0]=Gal_hankyu_T9550
-Constraint[Next][0]=Gal_hankyu_T9100
+Constraint[Next][0]=Gal_hankyu_Mc9100
 EmptyImage[S]=9000.2.0
 EmptyImage[E]=9000.2.1
 EmptyImage[SE]=9000.2.2
@@ -103,7 +103,7 @@ EmptyImage[NW]=9000.2.6
 EmptyImage[NE]=9000.2.7
 ---------------------------------
 obj=vehicle
-name=Gal_hankyu_T9100
+name=Gal_hankyu_Mc9100
 copyright=G_alumi
 intro_year=2003
 waytype=track

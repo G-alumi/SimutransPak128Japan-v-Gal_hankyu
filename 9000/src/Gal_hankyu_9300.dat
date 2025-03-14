@@ -96,7 +96,7 @@ gear=152
 power=800
 length=11
 Constraint[Prev][0]=Gal_hankyu_T9850
-Constraint[Next][0]=Gal_hankyu_T9400
+Constraint[Next][0]=Gal_hankyu_Mc9400
 EmptyImage[S]=9300.2.0
 EmptyImage[E]=9300.2.1
 EmptyImage[SE]=9300.2.2
@@ -108,7 +108,7 @@ EmptyImage[NE]=9300.2.7
 ---------------------------------
 obj=vehicle
 # Mc9400の誤植
-name=Gal_hankyu_T9400
+name=Gal_hankyu_Mc9400
 copyright=G_alumi
 intro_year=2003
 waytype=track
