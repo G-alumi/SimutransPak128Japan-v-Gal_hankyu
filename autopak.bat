@@ -4,7 +4,7 @@ cd /d %~dp0
 for /d %%d in ("./*") do (
 	cd %%~pfd/src
 	makeobj pak128 ../../vehicle.Gal_hankyu%%d.pak
-	echo %%d èIóπÉRÅ[Éh:%errorlevel%
+	echo %%d ÁµÇ‰∫Ü„Ç≥„Éº„Éâ:%errorlevel%
 	cd /d %~dp0
 )
 
