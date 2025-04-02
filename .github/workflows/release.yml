@@ -21,18 +21,21 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@master
+      
+      - name: Make Release Directory
+        run: mkdir /release
         
       - name: Run Makeobj
         run: |
-          cd ./vehicle
+          cd /vehicle
           for dir in `find * -maxdepth 0 -type d`; do
-            makeobj pak128 ./../vehicle.Gal_hankyu$dir.pak ./$dir/*.dat
+            makeobj pak128 /release/vehicle.Gal_hankyu$dir.pak /vehicle/$dir/*.dat
           done 
 
       - name: Archive Release
         run: |
-          cp ./compat_archive/${{ github.ref_name }}/* ./compat_tab
-          zip ${{ env.ZIP_FILE }} *.pak compat_tab/*
+          cp /compat_archive/${{ github.ref_name }}/* /release
+          zip ${{ env.ZIP_FILE }} release/*
         
       - name: Upload Release
         uses: ncipollo/release-action@v1
