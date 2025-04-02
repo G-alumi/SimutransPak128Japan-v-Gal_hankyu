@@ -30,7 +30,9 @@ jobs:
           done 
 
       - name: Archive Release
-        run: zip ${{ env.ZIP_FILE }} *.pak compat_archive/${{ github.ref_name }}/*
+        run: |
+          cp ./compat_archive/${{ github.ref_name }}/* ./compat_tab
+          zip ${{ env.ZIP_FILE }} *.pak compat_tab/*
         
       - name: Upload Release
         uses: ncipollo/release-action@v1
