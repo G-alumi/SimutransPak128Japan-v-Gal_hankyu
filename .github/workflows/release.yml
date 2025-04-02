@@ -1,0 +1,40 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+env:
+  ZIP_FILE: gal_hankyu.zip
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Install packages
+        run: |
+          sudo apt update
+          sudo apt install -y simutrans-makeobj
+
+      - name: Checkout
+        uses: actions/checkout@master
+        
+      - name: Run Makeobj
+        run: |
+          cd ./vehicle
+          for dir in `find * -maxdepth 0 -type d`; do
+            makeobj pak128 ./../vehicle.Gal_hankyu$dir.pak ./$dir/*.dat
+          done 
+
+      - name: Archive Release
+        run: zip ${{ env.ZIP_FILE }} *.pak compat_archive/${{ github.ref_name }}/*
+        
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "${{ env.ZIP_FILE }}"
+          bodyFile: "release.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
