@@ -34,8 +34,10 @@ jobs:
 
       - name: Archive Release
         run: |
-          cp ./compat_archive/${{ github.ref_name }}/* ./release
-          zip -r -j ${{ env.ZIP_FILE }} ./release
+          if [ -d ./compat_archive/${{ github.ref_name }} ]; then
+            cp ./compat_archive/${{ github.ref_name }}/* ./release
+            zip -r -j ${{ env.ZIP_FILE }} ./release
+          fi
         
       - name: Upload Release
         uses: ncipollo/release-action@v1
