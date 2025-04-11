@@ -29,7 +29,11 @@ jobs:
         run: |
           cd ./vehicle
           for dir in `find * -maxdepth 0 -type d`; do
-            makeobj pak128 ../release/vehicle.Gal_hankyu$dir.pak ./$dir/*.dat
+            if [ $dir = "7200" ]; then
+              makeobj pak128 ../release/vehicle.Gal_nose$dir.pak ./$dir/*.dat
+            else
+              makeobj pak128 ../release/vehicle.Gal_hankyu$dir.pak ./$dir/*.dat
+            fi
           done 
 
       - name: Archive Release
