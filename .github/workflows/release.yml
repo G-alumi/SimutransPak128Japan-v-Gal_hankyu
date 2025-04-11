@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@master
       
       - name: Make Release Directory
-        run: mkdir ./release
+        run: mkdir -p ./release
         
       - name: Run Makeobj
         run: |
