@@ -1,11 +1,9 @@
 @echo off
-cd /d %~dp0
+cd /d %~dp0/vehicle
 
 for /d %%d in ("./*") do (
-	cd %%~pfd/src
-	makeobj pak128 ../../vehicle.Gal_hankyu%%d.pak
-	echo %%d 終了コード:%errorlevel%
-	cd /d %~dp0
+	makeobj pak128 ../vehicle.Gal_hankyu%%d.pak ./%%d/*.dat
+	@REM echo %%d 終了コード:%errorlevel%
 )
 
 cd /d %~dp0
