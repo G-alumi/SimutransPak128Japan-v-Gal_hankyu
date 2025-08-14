@@ -107,7 +107,6 @@ EmptyImage[NW]=9300.2.6
 EmptyImage[NE]=9300.2.7
 ---------------------------------
 obj=vehicle
-# Mc9400の誤植
 name=Gal_hankyu_Mc9400
 copyright=G_alumi
 intro_year=2003
