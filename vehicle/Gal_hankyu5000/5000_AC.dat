@@ -16,12 +16,17 @@ weight=35
 gear=187
 power=560
 length=11
+# Next - T
 Constraint[Next][0]=Gal_hankyu_T5550_AC
-Constraint[Next][1]=Gal_hankyu_M5500_AC
-Constraint[Next][2]=Gal_hankyu_Mc5040_AC
-Constraint[Next][3]=Gal_hankyu_T2071(5000_AC)
-Constraint[Next][4]=Gal_hankyu_T2171(5000_AC)
-Constraint[Next][5]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][1]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][2]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][3]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][4]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][5]=Cho-Rapid_hankyu_T5750
+# Next - M' (unit/5000)
+Constraint[Next][6]=Gal_hankyu_M5500_AC
+# Next - M'c (unit/5000)
+Constraint[Next][7]=Gal_hankyu_Mc5040_AC
 EmptyImage[S]=5000_AC.0.0
 EmptyImage[E]=5000_AC.0.1
 EmptyImage[SE]=5000_AC.0.2
@@ -44,7 +49,9 @@ speed=110
 payload=140
 weight=26
 length=11
+# Prev - M'
 Constraint[Prev][0]=Gal_hankyu_M5500_AC
+Constraint[Prev][1]=Cho-Rapid_hankyu_M5700
 EmptyImage[S]=5000_AC.1.0
 EmptyImage[E]=5000_AC.1.1
 EmptyImage[SE]=5000_AC.1.2
@@ -67,9 +74,36 @@ speed=110
 payload=150
 weight=25.8
 length=11
+# Prev - Mc
 Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
 Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+Constraint[Prev][2]=Cho-Rapid_hankyu_Mc5200
+# Prev - T
+Constraint[Prev][3]=Gal_hankyu_T5550_AC
+Constraint[Prev][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][8]=Cho-Rapid_hankyu_T5750
+# Prev - M'(5200)
+Constraint[Prev][9]=Cho-Rapid_hankyu_M5700
+
+# Next - M'(5000)
 Constraint[Next][0]=Gal_hankyu_M5500_AC
+# Next - M'c
+Constraint[Next][1]=Gal_hankyu_Mc5040_AC
+Constraint[Next][2]=Cho-Rapid_hankyu_Mc5240
+# Next - T
+Constraint[Next][3]=Gal_hankyu_T5550_AC
+Constraint[Next][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][8]=Cho-Rapid_hankyu_T5750
+# Next - Tc
+Constraint[Next][9]=Gal_hankyu_Tc5050_AC
+Constraint[Next][10]=Gal_hankyu_Tc5050_AC_New
+Constraint[Next][11]=Cho-Rapid_hankyu_Tc5250
 EmptyImage[S]=5000_AC.2.0
 EmptyImage[E]=5000_AC.2.1
 EmptyImage[SE]=5000_AC.2.2
@@ -94,14 +128,23 @@ weight=35.5
 gear=187
 power=560
 length=11
+# Prev - Mc(unit/5000)
 Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
-Constraint[Prev][1]=Gal_hankyu_T5550_AC
-Constraint[Prev][2]=Gal_hankyu_Mc5000_AC_New
-Constraint[Prev][3]=Gal_hankyu_T2071(5000_AC)
-Constraint[Prev][4]=Gal_hankyu_T2171(5000_AC)
+Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+# Prev - T
+Constraint[Prev][2]=Gal_hankyu_T5550_AC
+Constraint[Prev][3]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][4]=Gal_hankyu_To2171(5000_AC)
 Constraint[Prev][5]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][7]=Cho-Rapid_hankyu_T5750
+
+# Next - Tc
 Constraint[Next][0]=Gal_hankyu_Tc5050_AC
 Constraint[Next][1]=Gal_hankyu_Tc5050_AC_New
+Constraint[Next][2]=Cho-Rapid_hankyu_Tc5250
+# Next - M
+Constraint[Next][3]=Cho-Rapid_hankyu_M5740
 EmptyImage[S]=5000_AC.3.0
 EmptyImage[E]=5000_AC.3.1
 EmptyImage[SE]=5000_AC.3.2
@@ -128,8 +171,16 @@ weight=35.7
 gear=187
 power=560
 length=11
+# Prev - Mc(unit/5000)
 Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
 Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+# Prev - T
+Constraint[Prev][2]=Gal_hankyu_T5550_AC
+Constraint[Prev][3]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][4]=Gal_hankyu_To2171(5000_AC)
+Constraint[Prev][5]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][7]=Cho-Rapid_hankyu_T5750
 EmptyImage[S]=5000_AC.4.0
 EmptyImage[E]=5000_AC.4.1
 EmptyImage[SE]=5000_AC.4.2
@@ -156,12 +207,17 @@ weight=35
 gear=187
 power=560
 length=11
+# Next - T
 Constraint[Next][0]=Gal_hankyu_T5550_AC
-Constraint[Next][1]=Gal_hankyu_M5500_AC
-Constraint[Next][2]=Gal_hankyu_Mc5040_AC
-Constraint[Next][3]=Gal_hankyu_T2071(5000_AC)
-Constraint[Next][4]=Gal_hankyu_T2171(5000_AC)
-Constraint[Next][5]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][1]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][2]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][3]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][4]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][5]=Cho-Rapid_hankyu_T5750
+# Next - M' (unit/5000)
+Constraint[Next][6]=Gal_hankyu_M5500_AC
+# Next - M'c (unit/5000)
+Constraint[Next][7]=Gal_hankyu_Mc5040_AC
 EmptyImage[S]=5000_AC.5.0
 EmptyImage[E]=5000_AC.5.1
 EmptyImage[SE]=5000_AC.5.2
@@ -184,7 +240,9 @@ speed=110
 payload=140
 weight=26
 length=11
+# Prev - M'
 Constraint[Prev][0]=Gal_hankyu_M5500_AC
+Constraint[Prev][1]=Cho-Rapid_hankyu_M5700
 EmptyImage[S]=5000_AC.6.0
 EmptyImage[E]=5000_AC.6.1
 EmptyImage[SE]=5000_AC.6.2
@@ -195,7 +253,7 @@ EmptyImage[NW]=5000_AC.6.6
 EmptyImage[NE]=5000_AC.6.7
 ---------------------------------
 obj=vehicle
-name=Gal_hankyu_T2071(5000_AC)
+name=Gal_hankyu_T2050(5000_AC)
 copyright=G_alumi
 intro_year=1977
 intro_month=3
@@ -208,9 +266,89 @@ speed=110
 payload=150
 weight=25.8
 length=11
+# Prev - Mc
 Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
 Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+Constraint[Prev][2]=Cho-Rapid_hankyu_Mc5200
+# Prev - T
+Constraint[Prev][3]=Gal_hankyu_T5550_AC
+Constraint[Prev][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][8]=Cho-Rapid_hankyu_T5750
+# Prev - M'(5200)
+Constraint[Prev][9]=Cho-Rapid_hankyu_M5700
+
+# Next - M'(5000)
 Constraint[Next][0]=Gal_hankyu_M5500_AC
+# Next - M'c
+Constraint[Next][1]=Gal_hankyu_Mc5040_AC
+Constraint[Next][2]=Cho-Rapid_hankyu_Mc5240
+# Next - T
+Constraint[Next][3]=Gal_hankyu_T5550_AC
+Constraint[Next][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][8]=Cho-Rapid_hankyu_T5750
+# Next - Tc
+Constraint[Next][9]=Gal_hankyu_Tc5050_AC
+Constraint[Next][10]=Gal_hankyu_Tc5050_AC_New
+Constraint[Next][11]=Cho-Rapid_hankyu_Tc5250
+EmptyImage[S]=5000_other.3.0
+EmptyImage[E]=5000_other.3.1
+EmptyImage[SE]=5000_other.3.2
+EmptyImage[SW]=5000_other.3.3
+EmptyImage[N]=5000_other.3.4
+EmptyImage[W]=5000_other.3.5
+EmptyImage[NW]=5000_other.3.6
+EmptyImage[NE]=5000_other.3.7
+---------------------------------
+obj=vehicle
+name=Gal_hankyu_To2071(5000_AC)
+copyright=G_alumi
+intro_year=1977
+intro_month=3
+waytype=track
+engine_type=electric
+freight=Passagiere
+RunningCost=53
+cost=12600000
+speed=110
+payload=150
+weight=25.8
+length=11
+# Prev - Mc
+Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
+Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+Constraint[Prev][2]=Cho-Rapid_hankyu_Mc5200
+# Prev - T
+Constraint[Prev][3]=Gal_hankyu_T5550_AC
+Constraint[Prev][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][8]=Cho-Rapid_hankyu_T5750
+# Prev - M'(5200)
+Constraint[Prev][9]=Cho-Rapid_hankyu_M5700
+
+# Next - M'(5000)
+Constraint[Next][0]=Gal_hankyu_M5500_AC
+# Next - M'c
+Constraint[Next][1]=Gal_hankyu_Mc5040_AC
+Constraint[Next][2]=Cho-Rapid_hankyu_Mc5240
+# Next - T
+Constraint[Next][3]=Gal_hankyu_T5550_AC
+Constraint[Next][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][8]=Cho-Rapid_hankyu_T5750
+# Next - Tc
+Constraint[Next][9]=Gal_hankyu_Tc5050_AC
+Constraint[Next][10]=Gal_hankyu_Tc5050_AC_New
+Constraint[Next][11]=Cho-Rapid_hankyu_Tc5250
 EmptyImage[S]=5000_other.0.0
 EmptyImage[E]=5000_other.0.1
 EmptyImage[SE]=5000_other.0.2
@@ -221,7 +359,7 @@ EmptyImage[NW]=5000_other.0.6
 EmptyImage[NE]=5000_other.0.7
 ---------------------------------
 obj=vehicle
-name=Gal_hankyu_T2171(5000_AC)
+name=Gal_hankyu_To2171(5000_AC)
 copyright=G_alumi
 intro_year=1977
 intro_month=3
@@ -234,9 +372,36 @@ speed=110
 payload=150
 weight=25.8
 length=11
+# Prev - Mc
 Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
 Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+Constraint[Prev][2]=Cho-Rapid_hankyu_Mc5200
+# Prev - T
+Constraint[Prev][3]=Gal_hankyu_T5550_AC
+Constraint[Prev][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][8]=Cho-Rapid_hankyu_T5750
+# Prev - M'(5200)
+Constraint[Prev][9]=Cho-Rapid_hankyu_M5700
+
+# Next - M'(5000)
 Constraint[Next][0]=Gal_hankyu_M5500_AC
+# Next - M'c
+Constraint[Next][1]=Gal_hankyu_Mc5040_AC
+Constraint[Next][2]=Cho-Rapid_hankyu_Mc5240
+# Next - T
+Constraint[Next][3]=Gal_hankyu_T5550_AC
+Constraint[Next][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][8]=Cho-Rapid_hankyu_T5750
+# Next - Tc
+Constraint[Next][9]=Gal_hankyu_Tc5050_AC
+Constraint[Next][10]=Gal_hankyu_Tc5050_AC_New
+Constraint[Next][11]=Cho-Rapid_hankyu_Tc5250
 EmptyImage[S]=5000_other.1.0
 EmptyImage[E]=5000_other.1.1
 EmptyImage[SE]=5000_other.1.2
@@ -260,9 +425,36 @@ speed=110
 payload=150
 weight=25.8
 length=11
+# Prev - Mc
 Constraint[Prev][0]=Gal_hankyu_Mc5000_AC
 Constraint[Prev][1]=Gal_hankyu_Mc5000_AC_New
+Constraint[Prev][2]=Cho-Rapid_hankyu_Mc5200
+# Prev - T
+Constraint[Prev][3]=Gal_hankyu_T5550_AC
+Constraint[Prev][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Prev][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Prev][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Prev][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Prev][8]=Cho-Rapid_hankyu_T5750
+# Prev - M'(5200)
+Constraint[Prev][9]=Cho-Rapid_hankyu_M5700
+
+# Next - M'(5000)
 Constraint[Next][0]=Gal_hankyu_M5500_AC
+# Next - M'c
+Constraint[Next][1]=Gal_hankyu_Mc5040_AC
+Constraint[Next][2]=Cho-Rapid_hankyu_Mc5240
+# Next - T
+Constraint[Next][3]=Gal_hankyu_T5550_AC
+Constraint[Next][4]=Gal_hankyu_To2071(5000_AC)
+Constraint[Next][5]=Gal_hankyu_To2171(5000_AC)
+Constraint[Next][6]=Gal_hankyu_T2880(5000_AC)
+Constraint[Next][7]=Gal_hankyu_T2050(5000_AC)
+Constraint[Next][8]=Cho-Rapid_hankyu_T5750
+# Next - Tc
+Constraint[Next][9]=Gal_hankyu_Tc5050_AC
+Constraint[Next][10]=Gal_hankyu_Tc5050_AC_New
+Constraint[Next][11]=Cho-Rapid_hankyu_Tc5250
 EmptyImage[S]=5000_other.2.0
 EmptyImage[E]=5000_other.2.1
 EmptyImage[SE]=5000_other.2.2
